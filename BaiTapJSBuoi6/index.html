@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS Buổi 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- Bài tập 1: Tìm số nguyên dương n -->
+    <section class="container">
+      <h3>Bài 1: Tìm số nguyên dương n</h3>
+      <div class="form-group">
+        <label for="num1"><h4>Nhập vào một số</h4></label>
+        <input
+          type="number"
+          name=""
+          id="num1"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-warning" onclick="timSoN()">Kết Quả</button>
+      <div
+        id="xuatKetQua"
+        class="alert alert-warning mt-3"
+        style="display: none"
+      ></div>
+    </section>
+    <hr />
+    <!--End Bài tập 1: Tìm số nguyên dương n -->
+    <!-- Bài tập 2: Tính Tổng S(n)-->
+    <section class="container">
+      <h3>Bài 2: Tính Tổng S(n)</h3>
+      <div class="form-group">
+        <label for="numX"><h4>Nhập vào số x</h4></label>
+        <input
+          type="number"
+          name=""
+          id="numX"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group">
+        <label for="numN2"><h4>Nhập vào số n</h4></label>
+        <input
+          type="number"
+          name=""
+          id="numN2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-warning" onclick="tinhTongS()">Kết Quả</button>
+      <div
+        id="xuatKQ"
+        class="alert alert-warning mt-3"
+        style="display: none"
+      ></div>
+    </section>
+    <hr />
+    <!--End Bài tập 2: Tính Tổng S(n)-->
+    <!-- Bài 3: Tính Giai Thừa -->
+    <section class="container">
+      <h3>Bài 3: Tính Giai Thừa</h3>
+      <div class="form-group">
+        <label for="numN3"><h4>Nhập vào số n</h4></label>
+        <input
+          type="number"
+          name=""
+          id="numN3"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-warning" onclick="tinhGiaiThua()">Kết Quả</button>
+      <div
+        id="xuatKQGiaiThua"
+        class="alert alert-warning mt-3"
+        style="display: none"
+      ></div>
+    </section>
+    <hr />
+    <!--End Bài 3: Tính Giai Thừa -->
+    <!-- Bài 4: Xuất 10 Div -->
+    <section class="container">
+      <h3>Bài 4: Xuất 10 Div</h3>
+      <button
+        class="btn btn-warning mx-auto d-block mt-5"
+        onclick="hienThiDiv()"
+      >
+        Nhấn vào đây để hiển thị 10 div
+      </button>
+      <div
+        id="xuatKQXuatDiv"
+        class="alert mt-3"
+        style="display: none; color: white; text-align: center"
+      ></div>
+    </section>
+    <hr />
+    <!-- End Bài 4: Xuất 10 Div -->
+    <!-- Bài 5: Xuất Dãy Số Nguyên Tố -->
+    <section class="container">
+      <h3>Bài 5: Xuất Dãy Số Nguyên Tố</h3>
+      <div class="form-group">
+        <label for="numN5"><h4>Nhập vào số n</h4></label>
+        <input
+          type="number"
+          name=""
+          id="numN5"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-warning" onclick="xuatSoNguyenTo()">
+        Xuất Dãy Số Nguyên Tố
+      </button>
+      <div
+        id="xuatKQXuatSoNguyeTo"
+        class="alert alert-warning mt-3"
+        style="display: none"
+      ></div>
+    </section>
+    <!-- End Bài 5: Xuất Dãy Số Nguyên Tố -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./timSoN.js"></script>
+    <!-- <script src="./tinhTong.js"></script> -->
+    <!-- <script src="./tinhGiaiThua.js"></script> -->
+    <!-- <script src="./xuatDiv.js"></script> -->
+    <!-- <script src="./xuatSoNguyenTo.js"></script> -->
+  </body>
+</html>
